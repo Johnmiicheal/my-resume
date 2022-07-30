@@ -1,0 +1,180 @@
+\documentclass[]{openfont}
+\usepackage{fancyhdr}
+\usepackage{changepage}
+\usepackage{tikz}
+
+\usepackage[colorlinks=true,linkcolor=blue]{hyperref}
+
+\newcommand{\ExternalLink}{%
+    \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{% 
+        \begin{scope}[x=1ex, y=1ex]
+            \clip (-0.1,-0.1) 
+                --++ (-0, 1.2) 
+                --++ (0.6, 0) 
+                --++ (0, -0.6) 
+                --++ (0.6, 0) 
+                --++ (0, -1);
+            \path[draw, 
+                line width = 0.5, 
+                rounded corners=0.5] 
+                (0,0) rectangle (1,1);
+        \end{scope}
+        \path[draw, line width = 0.5] (0.5, 0.5) 
+            -- (1, 1);
+        \path[draw, line width = 0.5] (0.6, 1) 
+            -- (1, 1) -- (1, 0.6);
+        }
+    }
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Johnmicheal}{Elijah}{ \urlstyle{same}\href{https://github.com/johnmiicheal}{github.com/johnmiicheal} |
+\href{mailto:elijah.johnmicheal@stu.cu.edu.ng}{elijah.johnmicheal@stu.cu.edu.ng} | +234 916 449 2977  }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{minipage}[t]{0.66\textwidth} 
+
+\section{Experience}
+\runsubsection{ScanTECH/IsoPlus Nigeria}
+\descript{| Engineering Intern }
+\location{Apr 2022 - Present | Lagos, NG}
+\vspace{\topsep}
+\vspace{\topsep}
+\begin{tightemize}
+\item Configured and deployed a virtual private server with private partition technology to manage resources on the server.
+\item Worked on an online employee onboarding service with TypeScript, Apollo GraphQL and Express and a frontend dashboard with Next.js.
+\item Employed the use of secure cloud storage services to ensure delicate company files and documents were securely stored and backed up.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Tether.NG/Otaso Limited}
+\descript{| Software Security Developer }
+\location{ Nov 2020 – Jan 2022 | Lagos, NG}
+\vspace{\topsep}
+\begin{tightemize}
+\item Led the reconnaissance team of TetherSec using monitoring tools like Shodan.io, Sherlock, Maltego and Google on Linux hacking distros.
+\item Implemented UI designs and collaborated with UI designer and backend engineers in developing mobile and web applications.
+\item Built mock designs and wireframes for new product concepts with a 100\% approval rate from the team leads
+\end{tightemize}
+\sectionsep
+
+\runsubsection{CSIS: Covenant University}
+\descript{| Network Engineering Intern }
+\location{ Jun 2021 – Oct 2021 | Ogun, NG}
+\vspace{\topsep}
+\begin{tightemize}
+\item Monitored and analysed UDP/ICMP/TCP data packets from the university's wireless network using wireshark and traceroute ensuring data traffic is optimal and to detect malicious activities.
+\item Assisted in the installation of CISCO wireless Access Point brackets on hard ceiling, setting up and connecting Cat5/Cat5e patch cords to AP ports, testing and ensuring signal strength were within -85dBm and -40dBm.
+\end{tightemize}
+\sectionsep
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+\section{Projects}
+\runsubsection{  \href{https://johnmiicheal.github.io}{\underline{FrontEnd Dev / UI Designs}} \ExternalLink}\\
+\descript{TypeScript,JavaScript, HTML/CSS, Wordpress, React-Native, Expo, AWS, Figma}
+\begin{tightemize}
+\item Developed an online learning platform using Wordpress CMS and Javascript to create the assignment and admin portal.
+\item Implemented visual design elements and principles in creating User Interface Design mockups and wireframes used in development of websites while prioritizing search engine optimization for landing pages, sales pages and portfolio websites.
+\item Re-created the Twitter mobile app user interface using react-native and Typescript with basic interactions like vertical scroll, splash-screen, open tweet floating button.
+
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\underline{ZCamp}}
+\descript{TypeScript}
+\begin{tightemize}
+\item Working in a team of 2 on the development of a forum for university students and subgroups w/ Reddit like features.
+\item Backend development with  Node.js, TS, GraphQL, PostgreSQL, Redis.
+\item Frontend development with ChakraUI, Next.js and TypeScript
+\item Implementing advanced forum features such as groups, content feeds,  moderators and comment threads.  
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.33\textwidth} 
+\section{Education} 
+
+\subsection{Covenant University}
+\descript{BEng in Information and Communication Engineering}
+\location{Expected 2023| Nigeria}
+
+\sectionsep
+
+
+
+% {\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst 2x) }}} \\
+
+\section{Activities}
+\subsection{ Hebron Startup Lab (Member) }
+\vspace{\topsep}
+\begin{tightemize}
+\item Participated in hackathons, code reviews and skillup bootcamps.
+\item The Goal of the startup lab is to take ideas and concept, then generating them into high-profit businesses.
+\end{tightemize}
+\sectionsep
+
+\subsection{ Olive Media (Audio Member) }
+\vspace{\topsep}
+\begin{tightemize}
+\item Operated digital audio mixers, while maintaining ideal audio signal levels and reducing signal feedback to minimum.
+\item Liaised with event organizers to understand their needs and determine the best way to utilize our limited resources to achieve consistently outstanding results.
+\end{tightemize}
+\sectionsep
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+
+\location{Languages}
+Python \textbullet{} TypeScript \textbullet{} JavaScript\\ \textbullet{} C++ \textbullet{} Java  \textbullet{} HTML \textbullet{} CSS
+\location{Tools}
+Linux \textbullet{} Git \textbullet{} AWS \textbullet{} Next.js
+\textbullet{} GraphQL \textbullet{}\\ Node.js  \textbullet{} React.js
+\textbullet{}  Flask \textbullet{} PostgreSQL\\ 
+\textbullet{} MongoDB  \\
+
+
+\sectionsep
+
+
+
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
